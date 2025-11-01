@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalleViewActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Cafeteria"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textStyle="italic"/>
+
+
+        <TextView
+            android:id="@+id/txvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Nombre: "
+            android:textSize="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAlignment="center"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/txvVariedad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Variedad: "
+            android:textSize="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAlignment="center"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/txvPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Precio"
+            android:textSize="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAlignment="center"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/txvStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Stock: "
+            android:textSize="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAlignment="center"
+            android:textStyle="italic"/>
+
+
+        <EditText
+            android:id="@+id/edtCantidadCompra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad a comprar"
+            android:textAlignment="center"
+            android:layout_marginTop="45dp"
+            android:layout_marginHorizontal="25dp"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/txvTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total a pagar :"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/txvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Stock insuficiente "
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:visibility="invisible"/>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
