@@ -7,36 +7,50 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:padding="25dp">
 
-
-        <Spinner
-            android:id="@+id/spnCafes"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp" />
+            android:layout_marginTop="50dp"
+            android:text="Cafeteria"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textStyle="italic"/>
 
-        <LinearLayout
-            android:layout_marginTop="30dp"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:orientation="vertical"
-            android:gravity="center">
-            <Button
-                android:id="@+id/btnVolverT"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mi cafeteria"
-                />
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Elige la cantidad que desea adquirir de cafe:"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textStyle="italic"/>
+
+        <Spinner
+            android:id="@+id/spnVariedadCafe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnVerDetalles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:backgroundTint="#132EC5"
+            android:text="Ver Detalles de la compra" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -21,14 +21,20 @@ import kotlin.reflect.KClass
 class MainActivity : AppCompatActivity(), ContratoCafeteria.Vista {
 
     private lateinit var spnCafes: Spinner;
-    private lateinit var btnVerDetaless: Button;
+    private lateinit var btnVerDetalles: Button;
     private lateinit var presentador: ContratoCafeteria.Presentador;
+
      override fun onCreate(savedInstanceState: Bundle?)
      {
          super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+         spnCafes = findViewById(R.id.spnVariedadCafe)
+         btnVerDetalles = findViewById(R.id.btnVerDetalles)
+
+         presentador = presenterMain(this)
+         presentador.cargarCafes()
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
